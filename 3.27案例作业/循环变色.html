@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background:burlywood;
+				margin: 10px 10px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<button>点击变色</button>
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	//获取div跟button的元素
+	var Odiv = document.getElementsByTagName("div");
+	var Obt = document.getElementsByTagName("button")[0];
+	
+	Obt.onclick =function(){
+		console.log(Odiv);
+		for(var i = 0;i<Odiv.length;i++){
+			Odiv[i].style.background = "yellow";
+		}
+	}
+	
+	
+</script>

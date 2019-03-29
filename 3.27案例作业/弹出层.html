@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#odiv{
+				width: 450px;
+				height:250px;
+				background: #DEB887;
+				border: 1px solid black;
+				display: none;
+			}
+			h3{
+				text-align: center;
+				height:35px;
+				line-height:35px ;
+				border-bottom: 1px solid deepskyblue;
+			}
+			#Ocw{
+				width: 20px;
+				background: red;
+				float: right;
+				margin-right:10px;
+				margin-top: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="obt">弹出层</button>
+		<div id="odiv">
+			<h3>微博文<img id="Ocw" src="img/cw.png"/></h3>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var oBtn =  document.getElementById("obt");
+	var  oDiv = document.getElementById("odiv");
+	var oCw = document.getElementById("Ocw");
+	
+	oBtn.onclick = function(){
+		oDiv.style.display="block";
+	}
+	oCw.onclick=function(){
+		oDiv.style.display="none";
+	}
+</script>

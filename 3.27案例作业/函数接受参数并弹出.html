@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="" id="" value="老师好" />
+		<input type="text" name="" id="" value="老师身体健康" />
+		<button>传参</button>
+	</body>
+</html>
+<script type="text/javascript">
+	var Oipt = document.getElementsByTagName("input");
+	var obtn = document.getElementsByTagName("button")[0];
+	var cs = function(a,b){
+		alert(a.value);
+		alert(b.value);
+	}
+	obtn.onclick=function(){
+		cs(Oipt[0],Oipt[1]);
+	}
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#outer{width:300px;margin:0 auto;}
+			#div1{color:#fff;width:180px;height:180px;background:#000;margin:0 auto;padding:10px;}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<input type="text" name="" id="" value="background" />
+			<input type="text" name="" id="" value="red" />
+			<button>确定</button><button>重置</button>
+		</div>
+		
+		<div id="div1">在上方输入框输入"属性名"及"属性值"，点击确定按钮查看效果。</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	var changeStyle = function (elem, name, value) {
+	elem.style[name] = value	
+}
+	
+	var oipt = document.getElementsByTagName("input");
+	var odiv = document.getElementById("div1");
+	var obt = document.getElementsByTagName("button");
+	
+	obt[0].onclick= function(){
+		changeStyle(odiv, oipt[0].value, oipt[1].value)	
+	}
+	obt[1].onclick = function(){
+		odiv.removeAttribute("style")
+	}
+</script>

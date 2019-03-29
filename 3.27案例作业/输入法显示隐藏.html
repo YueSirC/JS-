@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#oUl{
+				width: 40px;
+				height: 60px;
+				border: 1px solid #DEB887;
+				list-style: none;
+				display: none;
+			}
+			li{
+				margin-left: -13px;
+			}
+		</style>
+	</head>
+	<body>
+		<button>输入法</button>
+		<ul id="oUl">
+			<li>手写</li>
+			<li>拼音</li>
+			<li id="OGb">关闭</li>
+		</ul>
+	</body>
+</html>
+<script type="text/javascript">
+	var Obt = document.getElementsByTagName("button")[0];
+	var Oul = document.getElementById("oUl");
+	var Oli = Oul.getElementsByTagName("li");
+	var Ogb =  document.getElementById("OGb");
+	
+	Obt.onclick = function(){
+		Oul.style.display = Oul.style.display == "block" ? "none":"block";
+	}
+	Ogb.onclick = function(){
+		Oul.style.display="none";
+	}
+	
+</script>

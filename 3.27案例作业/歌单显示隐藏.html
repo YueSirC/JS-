@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div ,ul,li{margin: 0;padding: 0;}
+			#odiv{
+				width: 150px;
+				height: 150px;
+			}
+			#Otwo{
+					border-bottom:1px solid #DEB887 ;
+					background: #DEB887;
+			}
+			ul{
+				
+				display: none;
+				background: #DEB887;
+				margin-top: -18px;
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="odiv">
+			<h3 id="Otwo">播放列表...</h3>
+			<ul id = "OUl">
+				<li>花山</li>
+				<li>出山</li>
+				<li>进山</li>
+				<li>尽善</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+var  Bf = document.getElementById("Otwo");
+var Oul = document.getElementById("OUl");
+
+Bf.onclick = function(){
+	Oul.style.display = Oul.style.display== "block" ? "none":"block";
+}
+
+	
+</script>
