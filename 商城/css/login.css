@@ -1,0 +1,103 @@
+.xy_header{
+  padding: 25px 0;
+}
+.xy_header .xy_header_logo{
+  width:167px;
+  height:47px;
+  background: url(../img/xy_header_logo.png) no-repeat;
+}
+.xy_header .xy_header_text{
+  font-weight: bold;
+  font-size:24px;
+  margin-top:16px;
+}
+.xy_header .xy_header_tel{
+  margin-top:14px;
+}
+.xy_section{
+  height:514px;
+  background: url(../img/xy_section_bg.jpg) no-repeat center top;
+}
+.xy_section .xy_section_login{
+  width:345px;
+  background: #fff;
+  padding:25px;
+}
+.xy_section .xy_section_login .xy_login_title{
+  color:#eb340c;
+  font-size:18px;
+  text-align: center;
+  font-weight: bold;
+  padding-top:15px;
+  font-family: '黑体';
+}
+.xy_section .xy_login_title .xy_login_icon{
+  display: inline-block;
+  width: 45px;
+  height:45px;
+  vertical-align: middle;
+  background: url(../img/xy_login_icon.png) no-repeat;
+  margin: -5px 8px 0 0;
+}
+.xy_section .xy_login_top{
+  font-size:18px;
+  font-family: '黑体';
+  padding-top:30px;
+  color:#000;
+}
+.xy_section .xy_login_top .reg{
+  color:#eb340c;
+}
+.xy_section .xy_login_top a:hover{
+  text-decoration: none;
+}
+.xy_section .xy_login_form{
+  padding-top:32px;
+}
+.xy_section .xy_login_form .xy_form_username{
+  height:43px;
+  background: url(../img/xy_form_username.png) no-repeat;
+}
+.xy_section .xy_login_form .xy_form_userpass{
+  height:43px;
+  background: url(../img/xy_form_userpass.png) no-repeat;
+  margin-top:17px;
+}
+.xy_section .xy_login_form input{
+  height:43px;
+  border:none;
+  width:295px;
+  padding-left:48px;
+  background: transparent;
+  text-indent: 20px;
+}
+.xy_section .xy_form_back,.xy_section .xy_form_back a{
+  color:#747474;
+  font-size:12px;
+  cursor: pointer;
+  font-family: "黑体";
+}
+.xy_section .xy_form_back i{
+  display: inline-block;
+  width:18px;
+  height:18px;
+  vertical-align: middle;
+  background: url('../img/label.png') no-repeat;
+  margin:-1px 8px 0 0;
+}
+.xy_section .xy_form_back i.active_bg{
+    background: url('../img/label_bg.png') no-repeat;
+}
+
+.xy_section .xy_login_button input{
+  height:43px;
+  line-height: 43px;
+  background: #07bd54;
+  color:#fff;
+  text-align: center;
+  border:none;
+  outline: none;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
